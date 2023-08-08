@@ -20,11 +20,19 @@ def choose_wordlist():
         if numerical_choice == '4':
             print_help_choosing()
 
-    if numerical_choice == 1:
-        wordlist = "wordlists/eff_large_wordlist.txt"
-    elif numerical_choice == 2:
-        wordlist = "wordlists/eff_short_wordlist_1.txt"
-    elif numerical_choice == 3:
-        wordlist = "wordlists/eff_short_wordlist_2_0.txt"
+    if numerical_choice == '1':
+        return "wordlists/eff_large_wordlist.txt"
+    elif numerical_choice == '2':
+        return "wordlists/eff_short_wordlist_1.txt"
+    elif numerical_choice == '3':
+        return "wordlists/eff_short_wordlist_2_0.txt"
 
+def choose_length():
+    print("Choose a length for your passphrase")
+    length = ""
+
+    while length.isnumeric() == False or int(length) < 1:
+        length = input("Enter a number: ")
+        if length.isnumeric() and int(length) > 0:
+            return int(length)
 

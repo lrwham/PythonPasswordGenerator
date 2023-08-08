@@ -1,7 +1,7 @@
 import menu
 
-length = 0
-wordlist = ""
-
 wordlist = menu.choose_wordlist()
+length = menu.choose_length()
 
+print(wordlist)
+print(length)
