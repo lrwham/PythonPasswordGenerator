@@ -7,7 +7,7 @@ def print_help_choosing():
 
 
 def choose_wordlist():
-    print("Choose a wodlist:")
+    print("Choose a wordlist:")
     print("1. EFF's Long Wordlist")
     print("2. EFF's Short Wordlist #1")
     print("3. EFF's Short Wordlist #2")
